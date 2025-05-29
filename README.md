@@ -1,5 +1,5 @@
 # Ex03 Time Table
-## Date:
+## Date:28.05.25
 ## AIM
 To write a html webpage page to display your slot timetable.
 
@@ -24,128 +24,134 @@ Execute the program using runserver command.
 
 ## PROGRAM
 ```
+!DOCTYPE html>
 <html>
-    <img src="/static/logo.png" alt="SAVEETHA LOGO" width="1550px" height="150px" >
-    <br>
-    <br>
-    <table border="1" cellspacing="2" cellpadding="5" align="center">
-        <caption align="center" style="color: brown;">
-            <b>TIME TABLE - SANTHOSH(24900598)</b> 
-            <p>   </p>
-        </caption>
+<head>
+    <title>SLOT TIME TABLE - SANTHOSH (212224040294)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 5px auto;
+        }
+
+        table + table {
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 5px solid Black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: 15%;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        
+        strong {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="/static/logo.png">
+    <div class="center-text">
+        <p><strong>SLOT TIME TABLE - SANTHOSH(212224040294) </strong></p>
+    </div>
+    <table>
         <tr>
-            <th>Days</th>
-            <th>8:00-10:00</th>
-            <th>10:00-12:00</th>
-            <th>12:00-1:00</th>
-            <th>1:00-3:00</th>
-            <th>3:00-5:00</th>
+            <th colspan="1" bgcolor="Yellow">Day/Time</th>
+            <th colspan="1" bgcolor="Yellow">Monday</th>
+            <th colspan="1" bgcolor="Yellow">Tuesday</th>
+            <th colspan="1" bgcolor="Yellow">Wednesday</th>
+            <th colspan="1" bgcolor="Yellow">Thursday</th>
+            <th colspan="1" bgcolor="Yellow">Friday</th>
         </tr>
         <tr>
-            <th>MONDAY</th>
-            <td bgcolor="red">FREE</td>
-            <td>MATH (19MA201)</td>
-            <th>L</th>
-            <td>C PROG (19AI304)</td>
-            <td bgcolor="red">FREE</td>
+            <th colspan="1" bgcolor="Yellow">8-10</th>
+            <th colspan="3" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">PHY</th>
+            <th colspan="1" bgcolor="Cyan">CHE</th>
         </tr>
         <tr>
-            <th>TUESDAY</th>
-            <td>FWAD (19AI414)</td>
-            <td bgcolor="red">FREE</td>
-            <th>U</th>
-            <td>MATH (19MA201)</td>
-            <td>DE (19EE404)</td>
+            <th colspan="1" bgcolor="Yellow">10-12</th>
+            <th colspan="1" bgcolor="Cyan">GER</th>
+            <th colspan="1" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">FWAD</th>
+            <th colspan="1" bgcolor="Cyan">FWAD</th>
+            <th colspan="1" bgcolor="Cyan">PHY</th>
         </tr>
         <tr>
-            <th>WEDNESDAY</th>
-            <td bgcolor="red">FREE</td>
-            <td>CHEM (19CY205)</td>
-            <th>N</th>
-            <td>MENTOR MEET</td>
-            <td bgcolor="red">FREE</td>
+            <th colspan="1" bgcolor="Yellow">12-1</th>
+            <th colspan="5" bgcolor="Cyan">LUNCH</th>
         </tr>
         <tr>
-            <th>THURSDAY</th>
-            <td>UHV (SH7801)</td>
-            <td>CDS (19EY708)</td>
-            <th>C</th>
-            <td>DE (19EE404)</td>
-            <td bgcolor="red">FREE</td>
+            <th colspan="1" bgcolor="Yellow">1-3</th>
+            <th colspan="2" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">MAT</th>
+            <th colspan="1" bgcolor="Cyan">MAT</th>
+            <th colspan="1" bgcolor="Cyan">SS</th>
+        </tr>
         </tr>
         <tr>
-            <th>FRIDAY</th>
-            <td bgcolor="red">FREE</td>
-            <td>CHEM(19CY205)</td>
-            <th>H</th>
-            <td>FWAD(19AI414)</td>
-            <td bgcolor="red">FREE</td>
-        </tr>
-        <tr>
-            <th>SATURDAY</th>
-            <td bgcolor="red">FREE</td>
-            <td>C PROG (19AI304)</td>
-            <th align="center">HOUR</th>
-            <td>FWAD (19AI414)</td>
-            <td bgcolor="red">FREE</td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <br>
-    <table border="1" cellspacing="2" cellpadding="2" align="center">
-        <caption style="color: blue;"><b>COURSE NAME</b> <p>      </p></caption>
-        <tr>
-            <th>S.NO</th>
-            <th>COURSE CODE</th>
-            <th>COURSE NAME</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>19AI304</td>
-            <td>FUNDAMENTALS OF C PROGRAMMING</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>19AI414</td>
-            <td>FUNDAMENTALS OF WEB APPLICATION DEVELOPMENT</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>19CY205</td>
-            <td>PRINCIPLES OF CHEMISTRY IN ENGINEERING</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>19EE404</td>
-            <td>DIGITAL ELECTRONICS</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>19EY708</td>
-            <td>CAREER DEVELOPMENT SKILLS</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>19MA201</td>
-            <td>CALCULUS AND MATRIX ALGEBRA</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>SH7801</td>
-            <td>HUMAN VALUES & PROFESSIONAL ETHICS</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>ECA-M SCOFT</td>
-            <td>MENTOR MEET</td>
+            <th colspan="1" bgcolor="Yellow">3-5</th>
+            <th colspan="2" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">GER</th>
+            <th colspan="1" bgcolor="Cyan">CHE</th>
+            <th colspan="1" bgcolor="Cyan">FWAD</th>
         </tr>
     </table>
+
+    <table>
+        <tr>
+            <th colspan="1" bgcolor="White">S. No.</th>
+            <th colspan="1" bgcolor="White">Subject Code</th>
+            <th colspan="2" bgcolor="White">Subject Name</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">1.</th>
+            <th colspan="1" bgcolor="White">19AI41</th>
+            <th colspan="2" bgcolor="White">Fundamentals of Web Application Development(FWAD)</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">2.</th>
+            <th colspan="1" bgcolor="White">19EN612</th>
+            <th colspan="2" bgcolor="White">German Basic (GER)</th>        
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">3.</th>
+            <th colspan="1" bgcolor="White">19PH206</th>
+            <th colspan="2" bgcolor="White">Physics for Information Technology (PHY)</th> 
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">4.</th>
+            <th colspan="1" bgcolor="White">19CY205</th>
+            <th colspan="2" bgcolor="White">Principles of Chemistry in Engineering (CHE)</th> 
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">5.</th>
+            <th colspan="1" bgcolor="White">19MA201</th>
+            <th colspan="2" bgcolor="White">Calculus and Matrix Algebra (MAT)</th> 
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">6.</th>
+            <th colspan="1" bgcolor="White">19EY701</th>
+            <th colspan="2" bgcolor="White">Soft Skills (SS)</th> 
+        </tr>
+    </table>
+</body>
 </html>
 ```
 
 ## OUTPUT
-![Screenshot 2025-05-28 134226](https://github.com/user-attachments/assets/467dd19e-4f46-4cd4-810f-99f48e63c602)
+![Screenshot 2025-05-29 192729](https://github.com/user-attachments/assets/027c551e-353f-4983-add3-4077d57760a0)
 
 
 ## RESULT
